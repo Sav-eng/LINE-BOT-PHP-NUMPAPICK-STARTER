@@ -13,9 +13,9 @@ if (!is_null($events['ESP'])) {
 	send_LINE($events['ESP']);
 		
 	echo "OK";
-} else if (!is_null($events['ESP2']) && !is_null($event['ESP3'])) {
+} else if (!is_null($events['ESP']) && !is_null($event['ESP2'])) {
 	
-	sendpic_LINE($events['ESP2'],$events['ESP3']);
+	sendpic_LINE($events['ESP'],$events['ESP2']);
 		
 	echo "OK";
 }
