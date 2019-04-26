@@ -32,7 +32,7 @@ function send_LINE($msg){
       echo $result . "\r\n"; 
 }
 
-function send_LINE($msg,$msg2){
+function sendpic_LINE($msg,$msg2){
   $access_token = 'DkKMLkna1FyfJLGrgEE31N/O3AIGX5Tb++VrS6wR9XC3UQsWWCWP4g4+81tHgXl6CveXfsrZKLrtK9V/WCc9OGFPu8PaMw7NGNVXX/2fR1oOUYVgliqoJ40IBF/SrFoqZf81in2m5VDAD6eLmXd8nAdB04t89/1O/w1cDnyilFU='; 
  
    $messages = [
