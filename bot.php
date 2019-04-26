@@ -17,7 +17,7 @@ if (!is_null($events['ESP']) && !is_null($event['ESP2'])) {
 	
 	send_LINE($events['ESP']);
 		
-	echo "OK";
+	echo "OK NO PICTURE";
 }
 if (!is_null($events['events'])) {
 	echo "line bot";
