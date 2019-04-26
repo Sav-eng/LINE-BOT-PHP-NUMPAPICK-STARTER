@@ -12,7 +12,7 @@ if (!is_null($events['ESP']) && !is_null($event['ESP2'])) {
 	
 	sendpic_LINE($events['ESP'],$events['ESP2']);
 		
-	echo "OK";
+	echo "OK SEND PICTURE";
 } else if (!is_null($events['ESP'])) {
 	
 	send_LINE($events['ESP']);
