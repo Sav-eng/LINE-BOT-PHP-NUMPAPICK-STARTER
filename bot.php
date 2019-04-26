@@ -13,7 +13,7 @@ if (!is_null($events['ESP'])) {
 	send_LINE($events['ESP']);
 		
 	echo "OK";
-	}
+}
 if (!is_null($events['events'])) {
 	echo "line bot";
 	// Loop through each event
@@ -34,8 +34,8 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-$Topic = "nodemcu" ;
-$text = "Test";
-getMqttfromlineMsg($Topic,$text);
+// $Topic = "nodemcu" ;
+// $text = "Test";
+// getMqttfromlineMsg($Topic,$text);
 echo "OK3";
 ?>
