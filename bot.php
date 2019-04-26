@@ -8,18 +8,17 @@ $content = file_get_contents('php://input');
 
 $events = json_decode($content, true);
 // Validate parsed JSON data
-if (!is_null($events['ESP'])) {
-	
-	send_LINE($events['ESP']);
-		
-	echo "OK";
-} else if (!is_null($events['ESP']) && !is_null($event['ESP2'])) {
+if (!is_null($events['ESP']) && !is_null($event['ESP2'])) {
 	
 	sendpic_LINE($events['ESP'],$events['ESP2']);
 		
 	echo "OK";
+} else if (!is_null($events['ESP'])) {
+	
+	send_LINE($events['ESP']);
+		
+	echo "OK";
 }
-
 if (!is_null($events['events'])) {
 	echo "line bot";
 	// Loop through each event
