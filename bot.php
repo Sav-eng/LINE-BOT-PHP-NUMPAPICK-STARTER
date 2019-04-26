@@ -13,7 +13,13 @@ if (!is_null($events['ESP'])) {
 	send_LINE($events['ESP']);
 		
 	echo "OK";
+} else if (!is_null($events['ESP2']) && !is_null($event['ESP3'])) {
+	
+	sendpic_LINE($events['ESP2'],$events['ESP3']);
+		
+	echo "OK";
 }
+
 if (!is_null($events['events'])) {
 	echo "line bot";
 	// Loop through each event
