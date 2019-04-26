@@ -7,22 +7,15 @@ $content = file_get_contents('php://input');
 // Parse JSON
 
 $events = json_decode($content, true);
-console.log("send");
 // Validate parsed JSON data
-if (!is_null($events['type']) and is_null($events['msg2'])) {
+if (!is_null($events['ESP'])) {
 	
-	send_LINE($events['type'],$events['msg']);
+	send_LINE($events['ESP']);
 		
 	echo "OK";
-}
-else if(!is_null($events['type'] and !is_null($event['msg2'])){
-
-	sendpic_LINE($event['type'],$events['msg'],$events['msg2'])
-
-}
+	}
 if (!is_null($events['events'])) {
 	echo "line bot";
-	console.log("Send")
 	// Loop through each event
 	foreach ($events['events'] as $event) {
 		// Reply only when message sent is in 'text' format
@@ -41,8 +34,8 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-//$Topic = "nodemcu" ;
-//$text = "Test";
-//getMqttfromlineMsg($Topic,$text);
+$Topic = "nodemcu" ;
+$text = "Test";
+getMqttfromlineMsg($Topic,$text);
 echo "OK3";
 ?>
