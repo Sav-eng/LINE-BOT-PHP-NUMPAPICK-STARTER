@@ -8,11 +8,13 @@ $content = file_get_contents('php://input');
 
 $events = json_decode($content, true);
 // Validate parsed JSON data
+echo $event;
 if (!is_null($events['ESP']) && !is_null($event['ESP2'])) {
 	
 	sendpic_LINE($events['ESP'],$events['ESP2']);
-		
+	
 	echo "OK SEND PICTURE";
+
 } else if (!is_null($events['ESP'])) {
 	
 	send_LINE($events['ESP']);
